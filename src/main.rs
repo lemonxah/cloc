@@ -41,11 +41,11 @@ fn main() -> std::io::Result<()> {
         let mut cc: usize = 0; 
         if count > 0 {
             cc = ne.filter(|l| l.len() >= count).len();
-            snumlines += cc;
+            snumlines += &cc;
         }
         if verbose > 1 {
             if count > 0 {
-                print!("SLOC (at least {} charaters): {}, ", count, snumlines);
+                print!("SLOC: {}, ", &cc);
             }
             print!("LOC: {}, Empty: {}, ", &nec, &es);
         }
@@ -54,7 +54,7 @@ fn main() -> std::io::Result<()> {
         }
     }
     if count > 0 {
-        print!("SLOC: {}, ", snumlines);
+        print!("SLOC (at least {} charaters): {}, ", count, snumlines);
     }
     println!("LOC: {}, Empty: {}, Total: {}", numlines, empties, numlines + empties);
     Ok(())
