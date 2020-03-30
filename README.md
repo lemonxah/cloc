@@ -1,12 +1,12 @@
 # cloc
 count lines of code
 
-    clol 1.0
+    cloc 1.0
     lemonxah <lemon.xah@gmail.com>
     Count lines of code
 
     USAGE:
-        clol [FLAGS] [OPTIONS] <path> --filetype <filetype>
+        cloc [FLAGS] [OPTIONS] <path> --filetype <filetype>
 
     FLAGS:
         -h, --help       Prints help information
