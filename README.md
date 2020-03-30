@@ -1,9 +1,9 @@
-# cloc
-count lines of code
+# csloc
+count substantial lines of code
 
-    cloc 1.0
+    csloc 1.0
     lemonxah <lemon.xah@gmail.com>
-    Count lines of code
+    Count Substantial Lines of Code
 
     USAGE:
         cloc [FLAGS] [OPTIONS] <path> --filetype <filetype>
