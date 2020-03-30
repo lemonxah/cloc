@@ -1,7 +1,7 @@
-name: cloc
+name: csloc
 version: "1.0"
 author: lemonxah <lemon.xah@gmail.com>
-about: Count lines of code
+about: Count Substantial Lines of Code
 args:
     - path:
         short: p

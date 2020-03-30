@@ -1,5 +1,5 @@
 [package]
-name = "cloc"
+name = "csloc"
 version = "0.1.0"
 authors = ["lemonxah <lemon.xah@gmail.com>"]
 edition = "2018"
