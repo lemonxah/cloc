@@ -1,0 +1,34 @@
+name: clol
+version: "1.0"
+author: lemonxah <lemon.xah@gmail.com>
+about: Count lines of code
+args:
+    - path:
+        short: p
+        long: path
+        required: true
+        index: 1
+        help: Sets path for line counting
+    - filetype:
+        short: t
+        long: filetype
+        required: true
+        help: Sets filetype of source files. rs (rust), cpp (c++)
+        takes_value: true
+    - ignore:
+        short: i
+        long: ignore
+        multiple: true
+        required: false
+        takes_value: true
+        help: Sets ignored folder pattern. target (rust). Can set multiple -i
+    - count:
+        short: c
+        long: charcount
+        required: false
+        help: Counts lines with at least X non whitespace characters.
+        takes_value: true
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity. Use -v for a level 1 or -v -v / -vv for level 2. 
