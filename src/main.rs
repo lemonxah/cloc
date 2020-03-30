@@ -45,7 +45,7 @@ fn main() -> std::io::Result<()> {
         }
         if verbose > 1 {
             if count > 0 {
-                print!("SLOC: {}, ", &cc);   
+                print!("SLOC (at least {} charaters): {}, ", count, snumlines);
             }
             print!("LOC: {}, Empty: {}, ", &nec, &es);
         }
